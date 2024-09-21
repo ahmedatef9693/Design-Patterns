@@ -14,6 +14,8 @@ from abc import ABC,abstractmethod
 
 # abstract classes for methods
 class Printer(ABC):
+    def print_else(self):
+        print("yes")
     @abstractmethod
     def print(self,document):
         pass
