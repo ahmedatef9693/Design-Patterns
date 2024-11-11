@@ -9,7 +9,7 @@ def singleton(class_):
         return instances[class_]
     return wrapper
 
-
+#this wrapper preserves that class is returned as it is not an object from it
 
 
 @singleton
