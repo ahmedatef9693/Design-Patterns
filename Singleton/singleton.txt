@@ -1,0 +1,1 @@
+object will be created only once and willnot be called again ever in the program
