@@ -9,7 +9,8 @@ def singleton(class_):
         return instances[class_]
     return wrapper
 
-#this wrapper preserves that class is returned as it is not an object from it
+# this wrapper preserves that class is returned as it is not an object from it
+# The decorator returns a callable function (wrapper), not the result of calling it.
 
 
 @singleton
