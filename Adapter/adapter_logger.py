@@ -10,9 +10,9 @@ class AdapterLogger:
     def __init__(self, logger: Logger, file_name="temp.txt"):
         self.logger = logger
         self.file_name = file_name
-
+        
     def message(self, msg):
-
+        self.logger.message(msg)
         with open(self.file_name, "a") as f:
             f.write(f"{self.index} : {msg} " +'\n')
         self.index+=1
@@ -22,5 +22,6 @@ log = Logger()
 adapter = AdapterLogger(log, "output.txt")
 adapter.message("Hello")
     
+
 
  
