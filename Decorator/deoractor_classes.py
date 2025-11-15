@@ -41,7 +41,8 @@ class TaxDecorator(CoffeeDecorator):
         super().__init__(coffee)
 
     def get_cost(self):
-        tax:float = self.coffee.get_cost() + (self.coffee.get_cost() * 0.14)
+        base = self.coffee.get_cost()
+        tax:float = base + (base * 0.14)
         return tax
     
     def __str__(self):
@@ -60,4 +61,4 @@ class DiscountDecorator(CoffeeDecorator):
         return f"Price Of Coffee After Discount {self.get_cost()}"
 
 
-print(MilkDecorator(SugerDecorator(Coffee())))
+print(DiscountDecorator(TaxDecorator(MilkDecorator(SugerDecorator(Coffee())))))
