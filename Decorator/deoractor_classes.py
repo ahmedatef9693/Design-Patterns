@@ -54,7 +54,8 @@ class DiscountDecorator(CoffeeDecorator):
         super().__init__(coffee)
     
     def get_cost(self):
-        discount:float = self.coffee.get_cost() - (self.coffee.get_cost() * 0.1)
+        base = self.coffee.get_cost()
+        discount:float = base - (base * 0.1)
         return discount
     
     def __str__(self):
