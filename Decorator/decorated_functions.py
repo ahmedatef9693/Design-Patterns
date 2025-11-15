@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import time
 def timeit(func):
     def wrapper(*args,**kwargs):
@@ -16,7 +15,7 @@ def some_operation(*args,**kwargs):
 
 
 
-=======
+some_operation()
 import time
 def timeit(func):
     def wrapper(*args,**kwargs):
@@ -34,5 +33,4 @@ def some_operation(*args,**kwargs):
 
 
 
->>>>>>> 2c05466 (adding new designs)
 some_operation()
