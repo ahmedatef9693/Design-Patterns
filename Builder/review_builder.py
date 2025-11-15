@@ -37,7 +37,7 @@ class Person:
         return f"""
          -----------------
         |'Person Details'|
-         ------------------
+         -----------------
          Name : {self.full_name}
          Address : {self.street_address} {self.city}
          mobile_no : {self.mobile_no} 
@@ -49,9 +49,6 @@ class Person:
          branch : {self.branch}
          reports_to : {self.reports_to}
         """
-
-
-
 
 
 class PersonBuilder:
@@ -131,7 +128,7 @@ class JobDetailsBuilder(PersonalDetailsBuilder):
         self.person.reports_to = person
         return self
 
-    
+
 
 
 pb = JobDetailsBuilder()

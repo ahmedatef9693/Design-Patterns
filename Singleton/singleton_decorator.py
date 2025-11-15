@@ -1,22 +1,28 @@
 
 
 
-def singleton(class_):
+def singleton(class_object):
     instances = {}
-    def wrapper(*args, **kwargs):
-        if class_ not in instances:
-            instances[class_] = class_(*args,**kwargs)
-        return instances[class_]
-    return wrapper
+    def get_instance():
+        if class_object not in instances:
+            instances[class_object] = class_object()
+        return instances[class_object]
+    return get_instance
 
-# this wrapper preserves that class is returned as it is not an object from it
-# The decorator returns a callable function (wrapper), not the result of calling it.
+
 
 
 @singleton
 class Database:
-    def __init__(self,name,age=0):
-        print("Loading Data From Database!")
+    def __init__(self,name=None):
+        print("Loading Database")
 
-d1 = Database("ahmed")
-d2 = Database("hamada")
+
+d1 = Database()
+d2 = Database()
+
+
+
+
+
+

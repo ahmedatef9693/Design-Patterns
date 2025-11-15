@@ -83,8 +83,7 @@ class PersonNameBuilder(PersonBuilder):
         self.person.last_name = last_name
         return self
 
-pb = PersonBuilder()
-person = pb.\
+print(PersonBuilder().\
             has.\
                 name("Mike","T","Tyson").\
             lives.\
@@ -96,4 +95,4 @@ person = pb.\
                 as_a("Software Developer").\
                 earning(5000).\
             build()
-print(person)
+)

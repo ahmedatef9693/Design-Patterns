@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
     <application>
@@ -33,4 +34,41 @@
         <apiKey>your_api_key_here</apiKey>
         <timeoutMs>5000</timeoutMs>
     </api_settings>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <application>
+        <name>MyWebApp</name>
+        <version>1.0.0</version>
+        <environment>production</environment>
+    </application>
+
+    <database>
+        <type>MySQL</type>
+        <host>localhost</host>
+        <port>3306</port>
+        <name>my_database</name>
+        <user>db_user</user>
+        <password>secure_password</password>
+        <connectionPoolSize>10</connectionPoolSize>
+    </database>
+
+    <logging>
+        <level>INFO</level>
+        <outputPath>/var/log/mywebapp.log</outputPath>
+        <maxFileSizeMB>50</maxFileSizeMB>
+    </logging>
+
+    <features>
+        <feature name="user_registration" enabled="true"/>
+        <feature name="email_notifications" enabled="false"/>
+        <feature name="admin_dashboard" enabled="true"/>
+    </features>
+
+    <api_settings>
+        <endpoint>https://api.example.com/v1</endpoint>
+        <apiKey>your_api_key_here</apiKey>
+        <timeoutMs>5000</timeoutMs>
+    </api_settings>
+>>>>>>> 2c05466 (adding new designs)
 </configuration>

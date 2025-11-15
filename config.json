@@ -1,0 +1,33 @@
+{
+    "application": {
+        "name": "MyWebApp",
+        "version": "1.0.0",
+        "environment": "production"
+    },
+    "database": {
+        "type": "MySQL",
+        "host": "localhost",
+        "port": "3306",
+        "name": "my_database",
+        "user": "db_user",
+        "password": "secure_password",
+        "connectionPoolSize": "10"
+    },
+    "logging": {
+        "level": "INFO",
+        "outputPath": "/var/log/mywebapp.log",
+        "maxFileSizeMB": "50"
+    },
+    "features": {
+        "feature": [
+            "",
+            "",
+            ""
+        ]
+    },
+    "api_settings": {
+        "endpoint": "https://api.example.com/v1",
+        "apiKey": "your_api_key_here",
+        "timeoutMs": "5000"
+    }
+}
